@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="folder/style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="folder/card.css">
+    <link rel="stylesheet" href="folder/project.css">
+    <link rel="stylesheet" href="folder/skill.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+
+        <div id="card2">
+            <section id="home">
+                <p id="he">Hello!!</p>
+                <p id="h">My Name Is</p>
+                <p id="n">Md Abdullah Al Mubin</p>
+                <p id="d">A Computer Science and Engineering student at AIUB</p>
+            </section>
+            <nav id="social">
+                <a href="https://www.facebook.com/abdullahalmubin69"><button id="icon1"><img src="img/facebook.png"
+                            width="30"></button></a>
+                <a href="https://www.instagram.com/abdullahalmubin69"><button id="icon2"><img src="img/insta.png"
+                            width="30"></button></a>
+                <a href="https://github.com/mubin25-dodu"><button id="icon3"><img src="img/github.png"
+                            width="30"></button></a>
+                <a href="https://www.linkedin.com/in/abdullah-al-mubin9516"><button id="icon4"><img src="img/ln.png"
+                            width="30"></button></a>
+            </nav>
+        </div>
+        <h2>
+            <ul> About Me</ul>
+        </h2>
+        <section id="card1">
+            <h2>Who Am I?</h2>
+            <p>I am a second-year Computer Science and Engineering (CSE) student at AIUB, with a deep interest in
+                software development, game design, and real-world problem-solving. My focus is on writing efficient
+                algorithms and creating interactive applications.</p>
+            <pre>
+📍 Location: Dhaka, Bangladesh.
+🎂 Birthdate: June-30-2001.
+📅 Age: <span id="age"></span>
+📧 Email: <a href="mubin9516@gmail.com">mubin9516@gmail.com</a>
+💼 Current Role: Student at <a href="https://www.aiub.edu/" style="color: rgba(0, 0, 255, 0.612);">American International University-Bangladesh (AIUB)</a></pre>
+            <div class="container">
+                <section id="cardl">
+                    <h2>Education</h2>
+                    <a href="https://www.aiub.edu/">
+                        <p>BSc in Computer Science & Engineering American International University-Bangladesh (AIUB)</p>
+                    </a>
+                    <br>
+                </section>
+                <section id="cardl">
+                    <h2>Interests</h2>
+                    <li>Problem Solving</li>
+                    <li>Software Engineering</li>
+                    <li>Game Development</li>
+                    <li>Algorithms & Data Structures</li>
+
+                </section>
+        </section>
+        </div>
+        </section>
+        <h2>
+            <ul>Skills</ul>
+        </h2>
+        <div class="container">
+            <br>
+            <section id="cardl">
+                <h2>Programming Languages</h2>
+                <ul>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>SQL</li>
+                </ul>
+            </section>
+            <section id="cardl">
+                <h2>Frameworks & Tools</h2>
+                <ul>
+                    <li>OpenGL (Game Development)</li>
+                    <li>Database Management Systems (SQL)</li>
+                </ul>
+            </section>
+            <section id="cardl">
+                <h2>Other Skills</h2>
+                <ul>
+                    <li></li>
+                </ul>
+            </section>
+        </div>
+        <div id="projects">
+            <h2 style="padding-left: 40px; ">My Projects</h2>
+            <p style="padding-left: 40px;" >Here are some of the projects I have worked on:</p>
+        <ul id="projects-list"></ul>
+
+        <template id="card-template">
+          <li class="card">
+            <a href="#" class="repo-link"></a>
+            <p class="repo-description"></p>
+            <span class="repo-stars"></span>
+            <span class="repo-forks"></span>
+            <span class="repo-language"></span>
+          </li>
+        </template>
+        <a href="folder/contact.html" id="contact-me">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+            <div class="btn-contact-me">
+             <div id="contact-me"><i class="fa fa-arrow-right animate__slideInLeft" aria-hidden="true" herf="#"></i> Contact me
+             </div>
+            </div>
+            <script src="https://use.fontawesome.com/35be55a773.js"></script>
+        </a>
+
+    </main>
+    <header>
+        <div id="nav">
+            <h1>Portfolio</h1>
+            <nav id="nav2">
+                <a href="index.html"><button id="b1" style="color: brown;">Home</button></a>
+                <a href="folder/about.html"><button id="b1">About</button></a>
+                <a href="folder/skill.html"><button id="b1">Skills</button></a>
+                <a href="folder/projects.html"><button id="b1">Projects</button></a>
+                <a href="folder/research.html"><button id="b1">Research</button></a>
+                <a href="folder/interests.html"><button id="b1">Extracurricular Interests</button></a>
+                <a href="folder/contact.html"><button id="b1">Contact</button></a>
+            </nav>
+
+        </div>
+        <nav id="nav3">
+            <a href="index.html" style="color: brown;">Home</a>
+            <a href="folder/about.html">About</a>
+            <a href="folder/skill.html">Skills</a>
+            <a href="folder/projects.html">Projects</a>
+            <a href="folder/contact.html">Contact</a>
+        </nav>
+    </header>
+    <div id="dropdown">
+
+        <button>Menu</button>
+        <div id="dropdown-content">
+            <a href="index.html" style="color: brown;">Home</a>
+            <a href="folder/about.html">About</a>
+            <a href="folder/skill.html">Skills</a>
+            <a href="folder/Projects">Projects</a>
+            <a href="folder/research.html">Research</a>
+            <a href="folder/interests.html">Extracurricular Interests</a>
+            <a href="folder/contact.html">Contact</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
