@@ -39,6 +39,24 @@
     margin-right: 8px;
     color: #777;
   }
+
+.repo-languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.repo-language {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #777;
+}
+
+.language-logo {
+  display: none;
+}
+
 #cardl, #cardr {
     display: flex;
     justify-content: center;
