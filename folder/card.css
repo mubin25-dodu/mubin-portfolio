@@ -1,9 +1,8 @@
 .container {
     display: flex;
-    /* Ensures cards are positioned left and right */
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start; 
     width: 100%;
-    gap: 20px; /* Adds spacing between the cards */
+    gap: 20px;
 }
 
 .card {
@@ -16,7 +15,7 @@
     box-shadow: 0 0 10px rgba(1, 1, 1, 0.471);
     padding: 50px;
     position: relative;
-    width: 48%; /* Makes sure both fit in one row with space */
+    width: 48%; 
 
   }
   
@@ -57,7 +56,7 @@
   display: none;
 }
 
-#cardl, #cardr {
+#cardl, #cardr ,#skills {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -71,7 +70,7 @@
     width: 48%; /* Makes sure both fit in one row with space */
     min-width: 30px; /* Prevents the cards from shrinking too much */
 }
-#card1 {
+#card1,#about {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
