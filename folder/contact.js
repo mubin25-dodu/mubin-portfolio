@@ -9,5 +9,5 @@ function sendmail() {
     email: document.getElementById("Email").value,
     message: document.getElementById("message").value,
   }
-    emailjs.send("service_0jgffj7", "template_89vfg5n", params).then(alert("success"));
+    emailjs.send("service_0jgffj7", "template_89vfg5n", params);
   }
