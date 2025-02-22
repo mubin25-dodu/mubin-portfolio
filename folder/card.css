@@ -89,7 +89,7 @@ display: none;
   flex-direction: column;
   border-radius: 15px;
   background-image: url(../img/pic1.jpg);
-  background-size: cover; /* Resize the image to cover the entire card */
+  background-size: cover; /* Resize the image to fit exactly within the card */
   background-position: right; /* Center the image */
   box-shadow: 0 0 10px rgb(215, 206, 206);
   padding-top: 300px;
