@@ -1,112 +1,145 @@
 .container {
-    display: flex;
-    align-items: flex-start; 
-    width: 100%;
-    gap: 20px;
+  display: flex;
+  align-items: flex-start; 
+  width: 100%;
+  gap: 20px;
 }
-
+#prep {
+  display:none;
+}
 .card {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    background-color: #0a0a0a00;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(1, 1, 1, 0.471);
-    padding: 50px;
-    position: relative;
-    width: 48%; 
-
-  }
-  
-  .repo-link {
-    font-size: 20px;
-    font-weight: bold;
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .repo-description {
-    margin: 8px 0;
-    color: #555;
-  }
-  
-  .repo-stars,
-  .repo-forks,
-  .repo-language {
-    display: inline-block;
-    margin-right: 8px;
-    color: #777;
-  }
-
-.repo-languages {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #0a0a0a00;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(1, 1, 1, 0.471);
+  padding: 50px;
+  position: relative;
+  width: 48%; 
+
 }
 
+.repo-link {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.repo-description {
+  margin: 8px 0;
+  color: #555;
+}
+
+.repo-stars,
+.repo-forks,
 .repo-language {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+  display: inline-block;
+  margin-right: 8px;
   color: #777;
 }
 
+.repo-languages {
+display: flex;
+flex-wrap: wrap;
+gap: 8px;
+}
+
+.repo-language {
+display: flex;
+align-items: center;
+gap: 4px;
+color: #777;
+}
+
 .language-logo {
-  display: none;
+display: none;
 }
 
 #cardl, #cardr ,#skills {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    background-color: #0a0a0a00;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(1, 1, 1, 0.471);
-    margin: 1%;
-    padding: 50px;
-    position: relative;
-    width: 48%; /* Makes sure both fit in one row with space */
-    min-width: 30px; /* Prevents the cards from shrinking too much */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #0a0a0a00;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(1, 1, 1, 0.471);
+  margin: 1%;
+  padding: 50px;
+  position: relative;
+  width: 48%; /* Makes sure both fit in one row with space */
+  min-width: 30px; /* Prevents the cards from shrinking too much */
 }
 #card1,#about {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    background-color: #2b2929;
-    box-shadow: 0 0 10px rgba(35, 35, 35, 0.439);
-    padding: 30px;
-    height: auto;
-    position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #2b2929;
+  box-shadow: 0 0 10px rgba(35, 35, 35, 0.439);
+  padding: 30px;
+  height: auto;
+  position: relative;
 }
 #card2 {
-    margin-top: 60px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-     border-radius: 15px;
-    background-image: url(../img/pic1.jpg);
-    box-shadow: 0 0 10px rgb(215, 206, 206);
-    padding-top: 300px;
-    padding-bottom: 300px;
-    height: auto;
-    position: relative;
+  margin-top: 60px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 15px;
+  background-image: url(../img/pic1.jpg);
+  background-size: cover; /* Resize the image to cover the entire card */
+  background-position: right; /* Center the image */
+  box-shadow: 0 0 10px rgb(215, 206, 206);
+  padding-top: 300px;
+  padding-bottom: 300px;
+  height: auto;
+  position: relative;
 }
 @media (max-width: 768px) {
 .container {
-    flex-direction: column; /* Stack the cards */
-    align-items: center; /* Center them */
+  flex-direction: column; /* Stack the cards */
+  align-items: center; /* Center them */
 }
 
 #cardl, #cardr {
-    width: 70%; /* Take more width on small screens */
+  width: 70%; /* Take more width on small screens */
 }
 #card1{
-    margin-top: 120px;
-   
+  margin-top: 120px;
+ 
 }
 .project-card {
-    width: 100%;
+  width: 100%;
 }
+}
+@media (max-width: 425px) {
+  #nav2{
+    font-size: 2px;
+    margin-right:10px;
+  }
+  #card2
+{ 
+ 
+  background-position: -650px;
+} 
+
+#cardl, #cardr ,#skills {
+  width: 100%;
+}
+
+  #nav2 {
+    display: none;
+  }
+ 
+  pre{
+    display: none;
+  }
+  #prep {
+    display:inline;
+  }
+  
+
+
 }

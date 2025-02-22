@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="folder/project.css">
     <link rel="stylesheet" href="folder/skill.css">
     <script src="script.js" defer></script>
+    <script src="projects.js" defer></script>
 </head>
 
 <body>
@@ -46,11 +47,21 @@
 
              📍 Location: Dhaka, Bangladesh.                 📧 Email: <a href="mubin9516@gmail.com">mubin9516@gmail.com</a>
 
-             🎂 Birthdate: June-30-2001.                     📅 Age: <span id="age"></span>
+             🎂 Birthdate: June-30-2001.                     📅 Age: <span class="age"></span>
              
              💼 Current Role: Student at <a href="https://www.aiub.edu/" style="color: rgb(95, 109, 242);">American International University-Bangladesh (AIUB)</a>
             
             </pre>
+            <pre id="prep" >
+
+        📍 Location: Dhaka, Bangladesh.
+        📧 Email: <a href="mubin9516@gmail.com">mubin9516@gmail.com</a>
+        🎂 Birthdate: June-30-2001. 
+        📅 Age:  <span class="age"></span>
+        💼 Current Role: Student at <a href="https://www.aiub.edu/" style="color: rgb(95, 109, 242);">
+          American International University-Bangladesh</a>
+               
+               </pre>
             <div class="container">
                 <section id="cardl">
                     <h2>Education</h2>
@@ -98,14 +109,7 @@
                 </ul>
             </section>
         </div>
-        <a href="folder/contact.html" id="contact-me">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-            <div class="btn-contact-me">
-             <div id="contact"><i class="fa fa-arrow-right animate__slideInLeft" aria-hidden="true" herf="#"></i> Contact me
-             </div>
-            </div>
-            <script src="https://use.fontawesome.com/35be55a773.js"></script>
-        </a>
+       
         <div id="projects">
             <h2 style="padding-left: 40px; ">My Projects</h2>
             <p style="padding-left: 40px;" >Here are some of the projects I have worked on:</p>
@@ -120,6 +124,15 @@
             <div class="repo-languages"></div>
           </li>
         </template>
+
+        <a href="folder/contact.html" id="contact-me">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+            <div class="btn-contact-me">
+             <div id="contact"><i class="fa fa-arrow-right animate__slideInLeft" aria-hidden="true" herf="#"></i> Contact me
+             </div>
+            </div>
+            <script src="https://use.fontawesome.com/35be55a773.js"></script>
+        </a>
        
 
     </main>
@@ -134,29 +147,40 @@
                 <a href="#contact"><button id="b1">Contact</button></a>
             </nav>
         </div>
-        <nav id="nav3">
-            <a href="#home" style="color: brown;">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <div id="dropdown">
-        <button>Menu</button>
-        <div id="dropdown-content">
-            <a href="#home" style="color: brown;">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-
+        
     </div>
     <footer> 
         <p>© 2025 Md Abdullah Al Mubin. All rights reserved.</p>
         <p>For more information, contact me at: <a href="mailto:mubin9516@gmail.com">mubin9516@gmail.com</a></p>
         <a href="https://www.facebook.com/abdullahalmubin69">Facrbook</a> | <a href="https://github.com/mubin25-dodu">GitHub</a> | <a href="https://www.instagram.com/abdullahalmubin69/">Instagram</a>
     </footer>
+    <script>
+        // Calculate age in years, months, and days
+        function calculateAge(birthdate) {
+            const birthDate = new Date(birthdate);
+            const today = new Date();
+            let years = today.getFullYear() - birthDate.getFullYear();
+            let months = today.getMonth() - birthDate.getMonth();
+            let days = today.getDate() - birthDate.getDate();
+
+            if (days < 0) {
+                months--;
+                days += new Date(today.getFullYear(), today.getMonth(), 0).getDate();
+            }
+
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+
+            return `${years} years, ${months} months, and ${days} days`;
+        }
+
+        const ageElements = document.querySelectorAll('.age');
+        const ageText = calculateAge('2001-06-30');
+        ageElements.forEach(element => {
+            element.textContent = ageText;
+        });
+    </script>
 </body>
 </html>

@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  const menuButton = document.getElementById('menu-button');
+  const nav2 = document.getElementById('nav2');
+
+  menuButton.addEventListener('click', function() {
+    nav2.classList.toggle('show');
+  });
+
   function calculateAge(birthdate) {
     const birthDate = new Date(birthdate);
     const today = new Date();
@@ -31,7 +38,10 @@ document.addEventListener('DOMContentLoaded', function() {
     return `${years} years, ${months} months, and ${days} days`;
   }
 
-  document.getElementById('age').textContent = calculateAge('2001-06-30');
+  const ageElement = document.getElementById('age');
+  if (ageElement) {
+    ageElement.textContent = calculateAge('2001-06-30');
+  }
 
   async function fetchGitHubProjects() {
     const username = 'mubin25-dodu'; 
