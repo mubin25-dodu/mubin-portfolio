@@ -203,7 +203,7 @@ pre {
   font-size: 20px;
   color: #f7f7f7;
   margin-top: -10px;
-  font-family: "Damion", cursive;
+  font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
   color: #f1f1f1;
@@ -264,7 +264,7 @@ p {
   align-items: center;
   box-shadow: 100px #fbfafa, 5px 5px 15px #7a7a7a, inset 5px 5px 10px #8a8989,
     inset -5px -5px 10px #2d2d2d;
-  font-family: "Damion", cursive;
+    font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
   border: none;
   font-size: 20px;
