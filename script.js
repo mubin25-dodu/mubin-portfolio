@@ -91,6 +91,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
   fetchGitHubProjects();
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Md Abdullah Al Mubin",
+    "jobTitle": "Computer Science and Engineering Student",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "American International University-Bangladesh (AIUB)"
+    },
+    "url": "https://github.com/mubin25-dodu",
+    "sameAs": [
+      "https://www.facebook.com/abdullahalmubin69",
+      "https://www.instagram.com/abdullahalmubin69",
+      "https://www.linkedin.com/in/abdullah-al-mubin9516"
+    ]
+  };
+
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.text = JSON.stringify(structuredData);
+  document.head.appendChild(script);
+
 });
 
 document.addEventListener('scroll', function() {
