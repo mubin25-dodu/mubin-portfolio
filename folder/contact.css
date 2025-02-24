@@ -236,7 +236,7 @@ textarea:focus {
   90% {transform: translateY(-8.5rem) scale(0.3, 0.5);}
   100% {transform: translateY(-8rem) scale(0.3, 0.5);}
 }
-
+/*  
 @media (max-width: 600px) {
   body {
     margin: 100;
@@ -276,4 +276,4 @@ textarea:focus {
   }
 }
 
-
+ */

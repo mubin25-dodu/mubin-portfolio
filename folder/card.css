@@ -70,7 +70,6 @@ display: none;
 #cardl, #cardr ,#skills {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   flex-direction: column;
   background-color: #0a0a0a00;
   border-radius: 10px;
@@ -79,7 +78,7 @@ display: none;
   padding: 50px;
   position: relative;
   width: 48%; /* Makes sure both fit in one row with space */
-  min-width: 30px; /* Prevents the cards from shrinking too much */
+  min-width: 300px; /* Prevents the cards from shrinking too much */
 }
 #card1,#about {
   display: flex;
@@ -99,57 +98,103 @@ display: none;
   border-radius: 15px;
   background-image: url(../img/pic1.jpg);
   background-size: cover; /* Resize the image to fit exactly within the card */
-  background-position: right; /* Center the image */
+  background-position: right;
   box-shadow: 0 0 10px rgb(215, 206, 206);
   padding-top: 300px;
   padding-bottom: 300px;
   height: auto;
   position: relative;
 }
-@media (max-width: 768px) {
-.container {
-  flex-direction: column; /* Stack the cards */
-  align-items: center; /* Center them */
-}
 
-#cardl, #cardr {
-  width: 70%; /* Take more width on small screens */
+@media screen and (max-width: 1024px) {
+#he,#h,#n{
+  margin-left: -100px;
 }
-#card1{
-  margin-top: 120px;
- 
+#social,#d{
+  margin-left: -.2px;
 }
-.project-card {
-  width: 100%;
+#card2{
+  background-position: -450px;
 }
 }
-@media (max-width: 425px) {
+@media screen and (max-width: 768px) {
+  #he,#h,#n{
+    margin-left: -140px;
+  }
+  #social,#d{
+    margin-left: -40px;
+  }
+  #card2{
+    background-position: -550px;
+  }
   #nav2{
-    font-size: 2px;
-    margin-right:10px;
+    margin-right: 40px;
   }
-  #card2
-{ 
  
-  background-position: -650px;
-} 
-
-#cardl, #cardr ,#skills {
-  width: 100%;
+#prep{
+  display: block; 
 }
+pre{
+  display: none; 
+}
+  #cardl, #cardr ,#skills {
+    min-width: 30px; /* Prevents the cards from shrinking too much */
+  }
 
-  #nav2 {
-    display: none;
+
+}
+@media screen and (max-width: 425px) {
+
+  #card2{
+    background-position: -550px;
+  }
+  #nav2{
+    display: none; 
   }
  
-  pre{
-    display: none;
-  }
-  #prep {
-    display:inline;
-  }
-  
-.card {
- width: 90%;
+#prep{
+  display: block; 
+  font-size: 90%;
+  margin-left: -40px;
+}
+p{
+  font-size: 100%;
+}
+pre{
+  display: none; 
+}
+.container {
+  display: inline-flex;
+  align-items: flex-start; 
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+}
+#card2 {
+  height: 100px;
+  background-size: cover;
+  background-position-x: -600px;
+}
+#home{
+  scale: 0.6;
+  margin-left:-100px;
+  margin-top: -10px;
+}
+#social{
+  scale: 0.7;
+  margin-left: -150px;
+  margin-top: -30px;
+}
+#h{
+  width: 30%;
+  margin-top: -80px;
+}
+#cardl,#cardr ,#skills {
+  width: 100%; /* Makes sure both fit in one row with space */
+  min-width: unset; /* Remove min-width to prevent exceeding screen size */
+}
+.card{
+  margin-left: -20px;
+  width: 100%;
 }
 }

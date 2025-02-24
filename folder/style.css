@@ -21,15 +21,15 @@
 #d {
   font-size: 20px;
   position: relative;
-  left: 200px;
+  margin-left: 100px;
   margin-top: -30px;
 }
 
 #social {
   position: relative;
-  left: 200px;
+  margin-left: 100px;
   width: auto;
-  margin-top: 20px;
+  top: -60px;
 }
 
 body {
@@ -38,7 +38,7 @@ body {
 }
 .btn-contact-me {
   position: relative;
-  margin-left: 3%;
+  margin-left: 10%;
   font-size: 24px;
   text-align: center;
   background: #565345;
@@ -46,7 +46,7 @@ body {
   color: #8528A6;
   display: inline-block;
   width: 313px;
-  padding: 20px 0px 20px 0px;
+  padding: 30px 0px 20px 0px;
   
 }
 
@@ -325,28 +325,6 @@ a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (max-width: 1024px){
-
-#h {
-  position: relative;
-  margin-top: -90px;
-  left: 250px;
-}
-
-#he {
-  position: relative;
-  color: #d115c8;
-  font-size: 50px;
-  left: 100px;
-}
-
-#n {
-  font-size: 50px;
-  position: relative;
-  left: 100px;
-  margin-top: 20px;
-}
-
 #d {
   font-size: 20px;
   position: relative;
@@ -360,32 +338,4 @@ a {
   width: auto;
   margin-top: 20px;
 }
-}
-@media (max-width: 768px){
-
-pre{
-  transform: scale(0.8);
-  margin-left: -120px;
-}
-  #he,#n,#d,#social{
-    transform: scale(0.8);
-  margin-left: -125px;
-  }
-  #h{
-    transform: scale(0.8);
-  margin-left: -155px;
-  }
-
-}
-@media (max-width: 425px){
-
-    #he, #n, #d, #social {
-      transform: scale(0.6);
-      margin-left: -170px;
-    }
-    #h{
-    
-    }
-  
-  }
 
