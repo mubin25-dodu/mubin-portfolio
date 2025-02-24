@@ -19,7 +19,17 @@
   width: 46%; /* Makes sure both fit in one row with space */
   min-width: 50px; /* Prevents the cards from shrinking too much */
 }
+.card:hover {
+  background-color: rgba(128, 124, 124, 0.1);
+  box-shadow: 0 0 15px rgba(1, 1, 1, 0.6);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+a:hover{
+font-size: larger;
 
+}
 .repo-link {
   font-size: 20px;
   font-weight: bold;
