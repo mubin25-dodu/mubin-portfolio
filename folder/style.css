@@ -213,7 +213,7 @@ h1 {
 }
 
 #nav {
-  display: flex;
+  display: inline-flex;
   padding-top: 5px;
   padding-left: 15px;
   background-color: #242424;
@@ -360,6 +360,7 @@ a {
   right: 15px;
 }
 *{
+
   font-family: Arial, Helvetica, sans-serif;
 }
 

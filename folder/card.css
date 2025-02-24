@@ -1,5 +1,5 @@
 .container {
-  display: flex;
+  display: inline-flex;
   align-items: flex-start; 
   width: 100%;
   gap: 20px;
@@ -8,17 +8,16 @@
   display:none;
 }
 .card {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
-  align-items: flex-start;
   flex-direction: column;
   background-color: #0a0a0a00;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(1, 1, 1, 0.471);
-  padding: 50px;
-  position: relative;
-  width: 48%; 
-
+  margin: 1%;
+  padding: 50px ;
+  width: 46%; /* Makes sure both fit in one row with space */
+  min-width: 50px; /* Prevents the cards from shrinking too much */
 }
 
 .repo-link {
@@ -140,6 +139,7 @@ display: none;
     display:inline;
   }
   
-
-
+.card {
+ width: 90%;
+}
 }
