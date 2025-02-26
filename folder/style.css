@@ -192,6 +192,7 @@ body {
   }
 }
 
+
 body{
   background: linear-gradient(to top, #363333, #141313);
   height: auto;
@@ -277,7 +278,18 @@ p {
     inset -5px -5px 10px #444;
   color: #d6d6d6;
   transform: scale(1.1);
-  transition: 500ms;
+
+}
+#b1:focus {
+  box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+  inset -5px -5px 10px #444;
+  color: #ff1e1e;
+  transform: scale(1.1);
+
+}
+
+#b1:visited {
+color: #000;
 }
 
 a {
