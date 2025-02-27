@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 cardElement.querySelector('.repo-description').textContent = repo.description || 'No description';
                 cardElement.querySelector('.repo-stars').textContent = `⭐ ${repo.stargazers_count}`;
                 cardElement.querySelector('.repo-forks').textContent = `🍴 ${repo.forks_count}`;
-                cardElement.querySelector('.img').src = ` https://raw.githubusercontent.com/mubin25-dodu/${repo.name}/refs/heads/main/img/${repo.name}.jpg`;
+                cardElement.querySelector('.img').src = ` https://raw.githubusercontent.com/mubin25-dodu/${repo.name}/refs/heads/main/img/${repo.name}.png`;
                
                 cardElement.addEventListener('click', () => {
                     window.location.href = repo.html_url;
