@@ -77,9 +77,6 @@ mubin-portfolio/
 ## Contributing
 Contributions are welcome! If you have any suggestions or improvements, feel free to create an issue or submit a pull request.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contact
 If you have any questions or want to get in touch, feel free to contact me at [mubin9516@gmail.com](mailto:mubin9516@gmail.com).
 
