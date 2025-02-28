@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectsList = document.getElementById('projects-list');
     const cardTemplate = document.getElementById('card-template').content;
 
-    fetch('https://api.github.com/users/mubin25-dodu/repos')
+    fetch('https://winter-mode-133a.mubin9516.workers.dev')
         .then(response => response.json())
         .then(repos => {
             repos.forEach(repo => {
