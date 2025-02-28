@@ -31,6 +31,14 @@
   width: auto;
   top: -60px;
 }
+.gap{
+ height: 70px;
+}
+
+.sub{
+  color: bisque;
+  font-size: 40px;
+}
 
 body {
   background: #8528A6;
@@ -107,6 +115,7 @@ body {
   -moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
   transition: transform ease-out 0.1s, background 0.2s;
   cursor: pointer;
+  position: center;
 }
 
 .btn-contact-me:after {

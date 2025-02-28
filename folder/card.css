@@ -2,7 +2,7 @@
   display: inline-flex;
   align-items: flex-start; 
   width: 100%;
-  gap: 20px;
+  gap: auto;
 }
 #prep {
   display:none;
@@ -75,7 +75,7 @@ color: #777;
 display: none;
 }
 
-#cardl, #cardr ,#skills {
+#cardl, #cardr  {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -88,7 +88,7 @@ display: none;
   width: 48%; /* Makes sure both fit in one row with space */
   min-width: 300px; /* Prevents the cards from shrinking too much */
 }
-#card1,#about {
+#card1 {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -157,7 +157,6 @@ pre{
   #cardl, #cardr ,#skills {
     min-width: 30px; /* Prevents the cards from shrinking too much */
   }
-
 
 }
 @media screen and (max-width: 425px) {
