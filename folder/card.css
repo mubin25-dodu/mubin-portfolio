@@ -128,6 +128,9 @@ display: none;
 #card2{
   background-position: -450px;
 }
+body{
+  overflow-x: hidden;
+}
 }
 @media screen and (max-width: 768px) {
   #he,#h,#n{
@@ -151,6 +154,9 @@ display: none;
     margin-right: 40px;
     font-size:70%;
   }
+  body{
+    overflow-x: hidden;
+  }
  
 #prep{
   display: block; 
@@ -164,7 +170,9 @@ pre{
 
 }
 @media screen and (max-width: 425px) {
-
+  body{
+    overflow-x: hidden;
+  }
   #card2{
     background-position: -550px;
   }
