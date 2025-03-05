@@ -6,12 +6,38 @@
 }
 #prep {
   display:none;
+}#card1 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #2b2929;
+  box-shadow: 0 0 10px rgba(35, 35, 35, 0.439);
+  padding: 30px;
+  height: auto;
+  position: relative;
+}
+@property --angel {
+  syntax: '<angle>';
+  initial-value: 0deg;  
+  inherits: false;
+}
+#card1::after,#card1::before{
+  --angel: 0deg;
+  content: '';
+  position: absolute;
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
+  background: conic-gradient( from var(--angel),transparent 0% , #f4f6fa6c);
+  margin:  -35px;
+  border-radius: 10px;
+  z-index: -1;
+  animation: 3s spin linear infinite ;
 }
 .card {
   display: inline-flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #0a0a0a00;
+  background-color: #3129298f;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(1, 1, 1, 0.471);
   margin: 1%;
@@ -22,6 +48,7 @@
   width: 46%; /* Makes sure both fit in one row with space */
   min-width: 50px; /* Prevents the cards from shrinking too much */
 }
+
 .card:hover {
   background-color: rgba(15, 15, 15, 0.404);
   box-shadow:linear-gradient(to top, #991818, #c90303);
@@ -29,6 +56,20 @@
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+/* .card:hover::after{
+  content:'';
+  position: absolute;
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
+  background-color: #3129298f;
+  background: red;
+  margin-top: -40px;
+  margin-left: -20px;
+  border-radius: 10px;
+  z-index: -1;
+
+  /* conic-gradient( #6f9dff, #6f9dff); */
+ */
 
 a:hover{
 font-size: larger;
@@ -92,16 +133,7 @@ display: none;
   width: 48%; /* Makes sure both fit in one row with space */
   min-width: 300px; /* Prevents the cards from shrinking too much */
 }
-#card1 {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  background-color: #2b2929;
-  box-shadow: 0 0 10px rgba(35, 35, 35, 0.439);
-  padding: 30px;
-  height: auto;
-  position: relative;
-}
+
 #card2 {
   margin-top: 60px;
   display: flex;
@@ -118,6 +150,15 @@ display: none;
   position: relative;
 }
 
+@keyframes spin {
+  from {
+    --angel: 0deg;
+  }
+  to {
+    --angel: 360deg;
+  }
+  
+}
 @media screen and (max-width: 1024px) {
 #he,#h,#n{
   margin-left: -100px;
@@ -165,7 +206,7 @@ pre{
   display: none; 
 }
   #cardl, #cardr ,#skills {
-    min-width: 30px; /* Prevents the cards from shrinking too much */
+    min-width: 30px; 
   }
 
 }
