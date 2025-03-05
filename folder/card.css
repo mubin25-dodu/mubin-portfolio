@@ -47,6 +47,7 @@
   padding-bottom: 10px;
   width: 46%; /* Makes sure both fit in one row with space */
   min-width: 50px; /* Prevents the cards from shrinking too much */
+  
 }
 
 .card:hover {
@@ -261,12 +262,27 @@ pre{
   width: 30%;
   margin-top: -80px;
 }
-#cardl,#cardr ,#skills {
+#cardl,#cardr  {
   width: 100%; /* Makes sure both fit in one row with space */
-  min-width: unset; /* Remove min-width to prevent exceeding screen size */
+  min-width: unset; 
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  background-color: rgb(2, 0, 26);
+  top: 70px; 
 }
 .card{
-  margin-left: -20px;
-  width: 100%;
+  margin-left: -50px;
+  width: 125%;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  background-color: rgb(2, 0, 26);
+  top: 70px; 
 }
+.card:hover {
+  background-color:rgb(2, 0, 26);
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  
+ }
 }
