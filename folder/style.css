@@ -364,3 +364,13 @@ a {
   alt: "Social media icon";
 }
 
+footer{
+  position: relative;
+  left: -5px;
+  bottom: 0;
+  width: 110%;
+  background-color: #01051b77;
+  color: #f1f1f1;
+  text-align: left;
+  padding: 10px;  
+}
