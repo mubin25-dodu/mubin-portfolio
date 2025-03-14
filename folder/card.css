@@ -6,7 +6,8 @@
 }
 #prep {
   display:none;
-}#card1 {
+}
+#card1 {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -37,7 +38,7 @@
   display: inline-flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #3129298f;
+  background-color: #333136; /* Updated color */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(1, 1, 1, 0.471);
   margin: 1%;
@@ -51,35 +52,21 @@
 }
 
 .card:hover {
-  background-color: rgba(15, 15, 15, 0.404);
-  box-shadow:linear-gradient(to top, #991818, #c90303);
+  background-color: #1f1f20; /* Updated color */
   transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   cursor: pointer;
 }
-/* .card:hover::after{
-  content:'';
-  position: absolute;
-  height: calc(100% + 10px);
-  width: calc(100% + 10px);
-  background-color: #3129298f;
-  background: red;
-  margin-top: -40px;
-  margin-left: -20px;
-  border-radius: 10px;
-  z-index: -1;
-
-  /* conic-gradient( #6f9dff, #6f9dff); */
- */
 
 a:hover{
-font-size: larger;
+font-size: 105%;
 
 }
 .repo-link {
   font-size: 20px;
   font-weight: bold;
-  color: #007bff;
+  color: #FF6F61; /* Updated color */
   text-decoration: none;
 }
 
