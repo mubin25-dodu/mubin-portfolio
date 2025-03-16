@@ -6,18 +6,25 @@
 
 #he {
   position: relative;
-  color: #FF6F61; /* Updated color */
   font-size: 50px;
   left: 200px;
+  background: linear-gradient(to right, #FF6F61, #51b1ff94, #F7CAC9, #FF6F61);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 5s linear infinite;
 }
 
 #n {
   font-size: 50px;
-  color: #6B5B95; /* Updated color */
   position: relative;
   left: 200px;
   margin-top: 20px;
-  transition: color 0.5s;
+  background: linear-gradient(to right, #068cfa, #FF6F61, #F7CAC9 , #068cfa);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 3s linear infinite;
 }
 
 #d {
@@ -33,13 +40,27 @@
   width: auto;
   top: -60px;
 }
-.gap{
- height: 70px;
+
+.gap {
+  height: 70px;
 }
 
-.sub{
-  color: #F7CAC9; /* Updated color */
+.sub {
   font-size: 40px;
+  background: linear-gradient(to right,#f3928a, #f09e9d);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 5s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
 }
 
 body {
@@ -48,7 +69,7 @@ body {
 }
 .btn-contact-me {
   position: relative;
-  margin-left: 8%;
+  margin-left: 0%;
   font-size: 24px;
   text-align: center;
   background: #034F84; /* Updated color */
@@ -366,13 +387,18 @@ a {
   alt: "Social media icon";
 }
 
-footer{
-  position: relative;
-  left: -5px;
-  bottom: 0;
+.footer {
+  left: -10px;
+  bottom: -20px;
   width: 110%;
   background-color: #01051b77;
   color: #f1f1f1;
   text-align: left;
   padding: 10px;  
+  overflow-x: hidden;
+}
+footer{
+  display: inline;  
+  position: relative;
+  overflow-x: hidden;
 }
