@@ -387,7 +387,7 @@ a {
   alt: "Social media icon";
 }
 
-.footer {
+/* .footer {
   left: -10px;
   bottom: -20px;
   width: 110%;
@@ -396,7 +396,7 @@ a {
   text-align: left;
   padding: 10px;  
   overflow-x: hidden;
-}
+} */
 footer{
   display: inline;  
   position: relative;
