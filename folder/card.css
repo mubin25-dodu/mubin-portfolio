@@ -2,7 +2,6 @@
   display: inline-flex;
   align-items: flex-start; 
   width: 100%;
-  gap: auto;
 }
 #prep {
   display:none;
@@ -48,14 +47,11 @@
   padding-bottom: 10px;
   width: 46%; 
   min-width: 50px;
-  max-height:700px ;
-  min-height: 700px; 
-  
 }
 
 .card:hover {
   background-color: #1f1f20; /* Updated color */
-  transform: scale(1.05);
+  transform: scale(1.15);
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   cursor: pointer;
@@ -63,7 +59,6 @@
 
 a:hover{
 font-size: 105%;
-
 }
 .repo-link {
   font-size: 20px;
@@ -87,8 +82,6 @@ font-size: 105%;
 .img{
   border-radius: 10px;
   width: 100%;
-  max-height: 450px;
-  min-height: 450px;
 }
 .img:hover{
 box-shadow: #c90303;
@@ -126,7 +119,7 @@ display: none;
 }
 
 #card2 {
-  margin-top: 60px;
+  margin-top: 0px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -207,13 +200,19 @@ pre{
   }
   #card2{
     background-position: -550px;
+   
   }
   #nav2{
     display: none; 
   }
   h1{
+    display:inline-flex;
     padding-bottom:8px;
   }
+  #nav{
+   
+  }
+  
  
 #prep{
   display: block; 
@@ -231,7 +230,7 @@ pre{
   align-items: flex-start; 
   width: 100%;
   gap: 20px;
-  flex-wrap: wrap; /* Allow wrapping to the next line */
+  flex-wrap: wrap;
 }
 #card2 {
   height: 100px;
@@ -246,16 +245,31 @@ pre{
 #social{
   scale: 0.7;
   margin-left: -150px;
-  margin-top: -30px;
+  margin-top: 15px;
 }
 #h{
-  width: 30%;
-  margin-top: -80px;
+  width: 45%;
+  margin-top: -55px;
+  margin-left:-230px;
 }
+#he,#n{
+  font-size: 33px;
+  margin-left:  -186px;
+  margin-top: 0px;
+  display:inline-flex;
+}
+  #he{
+    margin-top: 40px;
+  }
+  #d{
+     margin-left:  -80px;
+    font-size: 12px;
+  }
+
 #cardl,#cardr  {
-  width: 100%; /* Makes sure both fit in one row with space */
-  min-width: unset; 
-  position: -webkit-sticky; /* For Safari */
+  width: 100%;
+  margin-bottom: 30px;
+  position: -webkit-sticky; 
   position: sticky;
   background-color: rgb(2, 0, 26);
   top: 70px; 
@@ -267,12 +281,15 @@ pre{
   position: sticky;
   background-color: rgb(2, 0, 26);
   top: 70px; 
+  margin-bottom: 40px;
 }
 .card:hover {
   background-color:rgb(2, 0, 26);
   transform: scale(1);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  
- }
+}
+}
+body {
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }

@@ -66,6 +66,7 @@
 body {
   background: #92A8D1; /* Updated color */
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 .btn-contact-me {
   position: relative;
@@ -385,6 +386,7 @@ a {
 
 #social img {
   alt: "Social media icon";
+  
 }
 
 /* .footer {
