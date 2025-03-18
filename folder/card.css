@@ -413,7 +413,7 @@ box-shadow: #c90303;
     margin-top: 2px;
     box-shadow: none;
   }
-,card img:hover {
+  .card img:hover {
     box-shadow: none;
   }
   .card-content {
