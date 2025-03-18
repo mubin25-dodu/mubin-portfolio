@@ -3,7 +3,28 @@
   margin-top: -90px;
   left: 350px;
 }
+.blur{
+  animation: animate linear both;
+  animation-timeline: view();
+}
 
+@keyframes animate {
+  0% {
+    filter: blur(20px);
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  30%,60% {
+    filter: blur(0px);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    filter: blur(20px);
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
 #he {
   position: relative;
   font-size: 50px;

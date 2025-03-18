@@ -16,7 +16,7 @@
 </head>
 
 <body style="overflow-x: hidden;">
-    <main>
+    <main> <div class="blur">
         <div id="home" class="gap"></div>
         <div data-aos="zoom-in" data-aos-duration="900" id="card2" style="overflow:hidden;">
             <section>
@@ -36,7 +36,7 @@
                             width="30"></button></a>
             </nav>
         </div>
-    </div>
+    </div></div>
         <h2>
             <div  id="about" class="gap"></div>
             <ul  data-aos="fade-right" data-aos-duration="800" class="sub"> About Me</ul>
@@ -120,24 +120,22 @@
         </div>
     </div> 
     <div  id="projects" class="gap"></div>
-     <ul  data-aos="fade-right" data-aos-duration="800" class="sub">My Projects</ul>   
-                   <div id="card1">
+     <ul  data-aos="fade-right" data-aos-duration="100" class="sub">My Projects</ul>   
+                   <div>
  
             <p style="padding-left: 40px;" >Here are some of the projects I have worked on:</p>
-        <ul id="projects-list"></ul>
-
-        <template id="card-template">
-          <li data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom" data-aos-duration="1000" class="card">
-            <a href="#" class="repo-link"></a>
-            <p class="repo-description"></p>
-            <span class="repo-stars"></span>
-            <span class="repo-forks"></span>
-            <div class="repo-languages"></div>
-            <br>
+            <div class="gap"></div>
             
-          <img class="img" alt="">
-          </li>  
+        <ul id="projects-list"></ul>
+        <template id="card-template">
+            <li  class="card blur">
+                <pre><a href="#" class="repo-link"></a>
+                <p class="repo-description"></p>
+                <span class="repo-stars"></span>
+                <span class="repo-forks"></span>
+                <div class="repo-languages"></div>
+                <br></pre>
+            </li>
         </template>
         </div>
         <div class="gap" id="extracurricular activities"></div>
