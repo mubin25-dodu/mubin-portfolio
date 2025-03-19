@@ -13,10 +13,12 @@
   align-items: flex-start;
   flex-direction: column;
   background-color: #2b2929;
-  box-shadow: 0 0 10px rgba(35, 35, 35, 0.439);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.439);
   padding: 30px;
   height: auto;
   position: relative;
+  background: transparent;
+  backdrop-filter: blur(10px);
 }
 
 @property --angel {
@@ -25,7 +27,7 @@
   inherits: false;
 }
 
-#card1::after,
+/* #card1::after,
 #card1::before {
   --angel: 0deg;
   content: '';
@@ -37,7 +39,7 @@
   border-radius: 10px;
   z-index: -1;
   animation: 3s spin linear infinite;
-}
+} */
 
 .card {
   display: flex;
@@ -155,9 +157,9 @@ box-shadow: #c90303;
   border-radius: 15px;
   background-image: url(../img/pic1.jpg);
   background-size: cover;
-  /* Resize the image to fit exactly within the card */
+
   background-position: right;
-  box-shadow: 0 0 10px rgb(215, 206, 206);
+  box-shadow: 0 0 5px rgb(215, 206, 206);
   padding-top: 300px;
   padding-bottom: 300px;
   height: auto;
@@ -321,9 +323,6 @@ box-shadow: #c90303;
     padding-bottom: 8px;
   }
 
-  #nav {}
-
-
   #prep {
     display: block;
     font-size: 90%;
@@ -442,6 +441,8 @@ box-shadow: #c90303;
     /* Adjust font size for smaller screens */
   }
 }
+
+
 
 body {
   overflow-x: hidden;
