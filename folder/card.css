@@ -414,6 +414,7 @@ box-shadow: #c90303;
   }
   .card img:hover {
     box-shadow: none;
+    transform: none;
   }
   .card-content {
     margin-left: 190px;
@@ -422,6 +423,12 @@ box-shadow: #c90303;
     min-height: auto;
     padding: 20px;
     box-shadow: none;;
+
+  }
+
+  .card-content:hover {
+    box-shadow: none;;
+    transform: none;
 
   }
 
@@ -441,8 +448,6 @@ box-shadow: #c90303;
     /* Adjust font size for smaller screens */
   }
 }
-
-
 
 body {
   overflow-x: hidden;
