@@ -21,26 +21,6 @@
   backdrop-filter: blur(10px);
 }
 
-@property --angel {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
-
-/* #card1::after,
-#card1::before {
-  --angel: 0deg;
-  content: '';
-  position: absolute;
-  height: calc(100% + 10px);
-  width: calc(100% + 10px);
-  background: conic-gradient(from var(--angel), transparent 0%, #f4f6fa6c);
-  margin: -35px;
-  border-radius: 10px;
-  z-index: -1;
-  animation: 3s spin linear infinite;
-} */
-
 .card {
   display: flex;
   align-items: flex-start;
@@ -90,7 +70,6 @@
   font-size: 20px;
   font-weight: bold;
   color: #FF6F61;
-  /* Updated color */
   text-decoration: none;
 }
 
@@ -107,14 +86,6 @@
   color: #666666;
 }
 
-/* .img{
-  border-radius: 10px;
-  width: 100%;
-}
-.img:hover{
-box-shadow: #c90303;
-} */
-
 .repo-languages {
   display: flex;
   flex-wrap: wrap;
@@ -126,10 +97,6 @@ box-shadow: #c90303;
   align-items: center;
   gap: 4px;
   color: #777;
-}
-
-.language-logo {
-  display: none;
 }
 
 #cardl,
@@ -144,9 +111,7 @@ box-shadow: #c90303;
   padding: 50px;
   position: relative;
   width: 48%;
-  /* Makes sure both fit in one row with space */
   min-width: 300px;
-  /* Prevents the cards from shrinking too much */
 }
 
 #card2 {
@@ -157,7 +122,6 @@ box-shadow: #c90303;
   border-radius: 15px;
   background-image: url(../img/pic1.jpg);
   background-size: cover;
-
   background-position: right;
   box-shadow: 0 0 5px rgb(215, 206, 206);
   padding-top: 300px;
@@ -166,19 +130,7 @@ box-shadow: #c90303;
   position: relative;
 }
 
-@keyframes spin {
-  from {
-    --angel: 0deg;
-  }
-
-  to {
-    --angel: 360deg;
-  }
-
-}
-
 @media screen and (max-width: 1024px) {
-
   #he,
   #h,
   #n {
@@ -200,7 +152,6 @@ box-shadow: #c90303;
 }
 
 @media screen and (max-width: 768px) {
-
   #he,
   #h,
   #n {
@@ -209,11 +160,11 @@ box-shadow: #c90303;
 
   h1 {
     padding-top: 8px;
-    font-size: 150%
+    font-size: 150%;
   }
 
   #b1 {
-    font-size: 140%
+    font-size: 140%;
   }
 
   #social,
@@ -263,7 +214,6 @@ box-shadow: #c90303;
     padding-right: 30px;
     min-height: 300px;
     min-width: 500px;
-
     margin-right: 200px;
     margin: none;
     margin-top: 72%;
@@ -274,33 +224,23 @@ box-shadow: #c90303;
 
   .card {
     flex-direction: column;
-    /* Stack image and text vertically */
     align-items: center;
     justify-content: center;
     width: 100%;
-    /* Adjust width for smaller screens */
     margin-bottom: 20px;
-    /* Reduce margin */
   }
 
   .card img {
     min-width: 100%;
-    /* Image takes full width */
     height: auto;
-    /* Maintain aspect ratio */
     max-width: 500px;
-    /* Limit maximum width */
   }
 
   .card-content {
     margin-left: 0;
-    /* Remove left margin */
     margin-top: 10px;
-    /* Add spacing between image and text */
     min-width: 100%;
-    /* Adjust width for smaller screens */
     padding: 10px;
-    /* Reduce padding */
   }
 }
 
@@ -311,7 +251,6 @@ box-shadow: #c90303;
 
   #card2 {
     background-position: -550px;
-
   }
 
   #nav2 {
@@ -395,6 +334,7 @@ box-shadow: #c90303;
     background-color: rgb(2, 0, 26);
     top: 70px;
   }
+
   .card {
     flex-direction: column;
     align-items: center;
@@ -412,44 +352,40 @@ box-shadow: #c90303;
     margin-top: 2px;
     box-shadow: none;
   }
+
   .card img:hover {
     box-shadow: none;
     transform: none;
   }
+
   .card-content {
     margin-left: 190px;
     min-width: 100%;
     border-radius: 0px;
     min-height: auto;
     padding: 20px;
-    box-shadow: none;;
-
+    box-shadow: none;
   }
 
   .card-content:hover {
-    box-shadow: none;;
+    box-shadow: none;
     transform: none;
-
   }
 
   .repo-link {
     font-size: 16px;
-    /* Adjust font size for smaller screens */
   }
 
   .repo-description {
     font-size: 14px;
-    /* Adjust font size for smaller screens */
   }
 
   .repo-stars,
   .repo-forks {
     font-size: 12px;
-    /* Adjust font size for smaller screens */
   }
 }
 
 body {
   overflow-x: hidden;
-  /* Prevent horizontal overflow */
 }

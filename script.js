@@ -1,26 +1,21 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const dropdownButton = document.querySelector('#dropdown button');
   const dropdownContent = document.querySelector('#dropdown-content');
 
-  dropdownButton.addEventListener('click', function() {
-    if (dropdownContent.style.display === 'block') {
-      dropdownContent.style.display = 'none';
-    } else {
-      dropdownContent.style.display = 'block';
-    }
+  dropdownButton.addEventListener('click', function () {
+    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
   });
 
   const menuButton = document.getElementById('menu-button');
   const nav2 = document.getElementById('nav2');
 
-  menuButton.addEventListener('click', function() {
+  menuButton.addEventListener('click', function () {
     nav2.classList.toggle('show');
   });
 
   function calculateAge(birthdate) {
     const birthDate = new Date(birthdate);
     const today = new Date();
-
     let years = today.getFullYear() - birthDate.getFullYear();
     let months = today.getMonth() - birthDate.getMonth();
     let days = today.getDate() - birthDate.getDate();
@@ -44,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   async function fetchGitHubProjects() {
-    const username = 'mubin25-dodu'; 
+    const username = 'mubin25-dodu';
     try {
       const response = await fetch(`https://api.github.com/users/${username}/repos`);
       if (!response.ok) throw new Error('Network response was not ok');
@@ -112,16 +107,11 @@ document.addEventListener('DOMContentLoaded', function() {
   script.type = 'application/ld+json';
   script.text = JSON.stringify(structuredData);
   document.head.appendChild(script);
-
 });
 
-document.addEventListener('scroll', function() {
+document.addEventListener('scroll', function () {
   const nav3 = document.getElementById('nav3');
-  if (window.scrollY > 100) {
-    nav3.style.top = '-60px';
-  } else {
-    nav3.style.top = '50px';
-  }
+  nav3.style.top = window.scrollY > 100 ? '-60px' : '50px';
 });
 
 function addClass() {
