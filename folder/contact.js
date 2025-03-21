@@ -3,11 +3,13 @@ function addClass() {
 }
 
 document.getElementById("sendLetter").addEventListener("click", addClass);
+
 function sendmail() {
-  let params = {
+  const params = {
     name: document.getElementById("name").value,
     email: document.getElementById("Email").value,
     message: document.getElementById("message").value,
-  }
-    emailjs.send("service_0jgffj7", "template_89vfg5n", params);
-  }
+  };
+
+  emailjs.send("service_0jgffj7", "template_89vfg5n", params);
+}
