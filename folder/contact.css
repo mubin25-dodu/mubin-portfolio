@@ -5,14 +5,15 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0;
+  margin: 200;
   padding: 0;
   color: #ffffff;
   background: linear-gradient(to top, #363333, #141313);
-  background-size: cover;
+    background-size: cover;
   text-align: center;
   font-family: "Damion", cursive;
   overflow: hidden;
+ 
   transform: scale(1.5);
 }
 h1, p {
@@ -61,9 +62,10 @@ button {
  color: white;
  font-size: 1rem;
  transition: background-color 0.2s;
-}
-button:hover, button:focus {
-  background-color: rgba(78, 94, 114, 1);
+  &:hover,:focus {
+    outline: none;
+    background-color: rgba(78, 94, 114, 1);
+  }
 }
 #goBack {
   padding: 0.5rem 1rem;
@@ -234,3 +236,44 @@ textarea:focus {
   90% {transform: translateY(-8.5rem) scale(0.3, 0.5);}
   100% {transform: translateY(-8rem) scale(0.3, 0.5);}
 }
+/*  
+@media (max-width: 600px) {
+  body {
+    margin: 100;
+    font-size: 0.8rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  input {
+    width: 80%;
+  }
+  .wrapper {
+    width: 90%;
+  }
+  .letter {
+    width: 90%;
+  }
+  .side {
+    height: auto;
+    padding: 1rem;
+  }
+  .envelope.front {
+    width: 8rem;
+    height: 5rem;
+  }
+  .envelope.back {
+    width: 8rem;
+    height: 5rem;
+  }
+  .envelope.front::before, .envelope.front::after {
+    width: 10rem;
+    height: 5rem;
+  }
+  .envelope.back::before {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+ */
