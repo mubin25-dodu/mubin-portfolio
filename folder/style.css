@@ -445,3 +445,15 @@ footer{
   position: relative;
   overflow-x: hidden;
 }
+
+.tik{
+  font-size: 20px;
+  /* color: #fff0e4; */
+  margin: 10px;
+}
+.tik::marker {
+  content: "✔✔   "; 
+  font-size: 60%;
+  font-weight: bold;
+  color: #0de3ff; 
+}
