@@ -28,7 +28,23 @@ document.addEventListener('DOMContentLoaded', () => {
         repoForks.classList.add('repo-forks');
         repoForks.textContent = `🍴 ${repo.forks_count}`;
 
-        cardContent.append(repoLink, repoDescription, repoStars, repoForks);
+        const languageContainer = document.createElement('div');
+        languageContainer.classList.add('language-container');
+        languageContainer.textContent = 'Languages: Loading...';
+
+        // Fetch languages for the repository
+        fetch(repo.languages_url)
+          .then(languagesResponse => languagesResponse.json())
+          .then(languages => {
+            const languageList = Object.keys(languages).join(', ');
+            languageContainer.textContent = `Languages: ${languageList || 'None'}`;
+          })
+          .catch(error => {
+            console.error(`Error fetching languages for ${repo.name}:`, error);
+            languageContainer.textContent = 'Languages: Error loading';
+          });
+
+        cardContent.append(repoLink, repoDescription, repoStars, repoForks, languageContainer);
 
         const imageElement = document.createElement('img');
         imageElement.src = `https://raw.githubusercontent.com/mubin25-dodu/${repo.name}/main/img/${repo.name}.png`;
