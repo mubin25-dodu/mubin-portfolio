@@ -424,6 +424,11 @@
   /* color: #fff0e4; */
   margin: 1px;
 }
+#nav{
+  height: 60px;
+  padding: 0px;
+  margin: 0px;
+}
 }
 
 body {
