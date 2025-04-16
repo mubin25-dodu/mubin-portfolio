@@ -81,6 +81,7 @@
   font-size: 40px;
   background: linear-gradient(to right,#f3928a, #f09e9d);
   background-size: 200%;
+  font-weight: bolder;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientAnimation 5s linear infinite;
@@ -259,7 +260,7 @@ body {
 
 
 body{
-  background: linear-gradient(to bottom, #1c1c1c, #2a2a2a);
+  background: radial-gradient(ellipse at bottom, #0d1d31 10%, #0c0d13 100%);
   height: auto;
   font-family: "Damion", cursive;
   overflow-x: hidden; /* Prevent horizontal overflow */
@@ -451,6 +452,10 @@ footer {
   font-size: 20px;
   /* color: #fff0e4; */
   margin: 10px;
+  padding: 0%;
+}
+ul{
+  margin-left: -15px;
 }
 .tik::marker {
   content: "✔✔   "; 
