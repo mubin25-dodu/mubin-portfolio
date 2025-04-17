@@ -11,10 +11,10 @@
 @keyframes animate {
   0% {
     filter: blur(5px);
-    transform: scale(0.8);
+    transform: scale(0.5);
     opacity: 0;
   }
-  25%,60% {
+  45%,50% {
     filter: blur(0px);
     transform: scale(1);
     opacity: 1;
@@ -22,7 +22,7 @@
   100% {
     filter: blur(5px);
     opacity: 0;
-    transform: scale(0.8);
+    transform: scale(0.5);
   }
 }
 .logo {
@@ -74,13 +74,14 @@
 
 .gap {
   max-width: 10%;
-  height: 90px;
+  height: 50px;
 }
 
 .sub {
   font-size: 40px;
   background: linear-gradient(to right,#f3928a, #f09e9d);
   background-size: 200%;
+  font-weight: bolder;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientAnimation 5s linear infinite;
@@ -259,7 +260,7 @@ body {
 
 
 body{
-  background: linear-gradient(to bottom, #1c1c1c, #2a2a2a);
+  background: radial-gradient(ellipse at bottom, #0d1d31 10%, #0c0d13 100%);
   height: auto;
   font-family: "Damion", cursive;
   overflow-x: hidden; /* Prevent horizontal overflow */
@@ -430,18 +431,55 @@ a {
   
 }
 
-/* .footer {
-  left: -10px;
-  bottom: -20px;
-  width: 110%;
-  background-color: #01051b77;
-  color: #f1f1f1;
-  text-align: left;
-  padding: 10px;  
-  overflow-x: hidden;
-} */
-footer{
-  display: inline;  
+
+footer {
   position: relative;
-  overflow-x: hidden;
+  left: 0;
+  bottom: 0;
+  width: 105%;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+  color: #ffffff; 
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+  box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: -20px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.tik{
+  font-size: 20px;
+  /* color: #fff0e4; */
+  margin: 10px;
+  padding: 0%;
+}
+ul{
+  margin-left: -15px;
+}
+.tik::marker {
+  content: "✔✔   "; 
+  font-size: 60%;
+  font-weight: bold;
+  color: #0de3ff; 
+}
+
+.progress-bar {
+  /* background-color: #e0e0e0; */
+  border-radius: 25px;
+  margin: 10px 0;
+  height: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Progress bar fill */
+.progress {
+  background-color: #6098ff;
+  height: 100%;
+  text-align: center;
+  line-height: 10px;
+  /* color: rgb(231, 228, 228); */
+  border-radius: 25px;
+  box-shadow: #f09e9d 0px 0px 10px 6px;
 }
