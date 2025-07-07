@@ -57,7 +57,7 @@
   min-height: 300px;
   min-width: 500px;
   margin-left: 20%;
-  margin-top: 2%;
+  /* margin-top: 2%; */
   box-shadow: 0 0 7px #28b6ee;
   gap: 10px;
 }
