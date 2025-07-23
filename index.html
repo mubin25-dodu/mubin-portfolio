@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="folder/card.css">
     <script src="script.js" defer></script>
     <script src="projects.js" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body style="overflow-x: hidden;">
@@ -40,7 +39,7 @@
     </div></div>
         <h2>
             <div  id="about" class="gap"></div>
-            <ul  data-aos="fade-right" data-aos-duration="800" class="sub"> About Me</ul>
+            <ul class="sub">👨‍💻 About Me</ul>
         </h2>
         <section id="card1">
             <h2>Who Am I?</h2>
@@ -68,7 +67,7 @@
                
                </pre>
             <div class="container">
-                <section  data-aos="zoom-in-up" data-aos-duration="800"  id="cardl">
+                <section id="cardl">
                     <h2>Education</h2>
                     <a>
                         <p style="color: #FF6F61; font-weight: bolder; margin-bottom: -3%;">BSc 2023-2026 (expected)</p>
@@ -78,7 +77,7 @@
                     </a>
                     
                 </section>
-                <section data-aos="zoom-in-up" data-aos-duration="800" id="cardl">
+                <section id="cardl">
                     <h2>Interests</h2>
                    <ul>  <li class="tik">Problem Solving</li>
                     <li class="tik">Software Engineering</li>
@@ -91,12 +90,12 @@
         </section>
         <div class="gap" id="skills"></div>
         <h2>
-            <ul  data-aos="fade-right" data-aos-duration="800" class="sub">Skills</ul>
+            <ul class="sub">🚀 Skills</ul>
         </h2>
         <div id="card1">
         <div class="container">
             <br>
-            <section data-aos="zoom-in-up" data-aos-duration="800" id="cardr">
+            <section id="cardr">
                 <h2>Programming Languages</h2>
                 <ul>
                     <li class="tik">C++</li>
@@ -115,7 +114,7 @@
                     </div>
                 </ul>
             </section>
-            <section data-aos="zoom-in-up" data-aos-duration="800" id="cardr">
+            <section id="cardr">
                 <h2>Frameworks & Tools</h2>
                 <ul>
                     <li class="tik">OpenGL (Game Development)</li>
@@ -132,7 +131,7 @@
                     </div>
                 </ul>
             </section>
-            <section data-aos="zoom-in-up" data-aos-duration="800" id="cardr">
+            <section id="cardr">
                 <h2>Other Skills</h2>
                 <ul>
                     <li class="tik">HTML</li>
@@ -152,10 +151,39 @@
         </div>
     </div> 
     <div  id="projects" class="gap"></div>
-     <ul    class="sub">My Projects</ul>   
+     <ul    class="sub">🛠️ My Projects</ul>   
                    <div>
  
             <p style="padding-left: 40px;" >Here are some of the projects I have worked on:</p>
+            
+            <!-- Project Overview Section -->
+            <div class="project-overview">
+                <div class="overview-card">
+                    <div class="overview-stats">
+                        <div class="stat-item">
+                            <div class="stat-icon">📁</div>
+                            <span class="stat-number" id="total-projects">Loading...</span>
+                            <span class="stat-label">Total Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">⭐</div>
+                            <span class="stat-number" id="total-stars">Loading...</span>
+                            <span class="stat-label">Total Stars</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">🍴</div>
+                            <span class="stat-number" id="total-forks">Loading...</span>
+                            <span class="stat-label">Total Forks</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">💻</div>
+                            <span class="stat-number" id="languages-used">Loading...</span>
+                            <span class="stat-label">Languages Used</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="gap"></div>
             
         <ul id="projects-list"></ul>
@@ -171,49 +199,75 @@
         </template>
         </div>
         <div class="gap" ></div>
-        <ul data-aos="fade-right" data-aos-duration="800" class="sub"> Beyond the Classroom</ul>
-        <div id="card1">
-            <div class="container" >
-         <div  data-aos="zoom-in-up" data-aos-duration="800" class="class">
-            <section>
-                <h2 style="color: #FF6F61;">Nanotechnology Poster Presentation</h2>
-                <p><strong style="color: #00ff95;">Award:</strong> Best Poster – Physics Poster Contest</p>
-                <p><strong style="color: #00ff95;">Team Members:</strong> 
-                    <span style="color: #2196F3;">Nabilah Farha</span>, 
-                    <span style="color: #2196F3;">Abdullah Al Mubin</span>, 
-                    <span style="color: #2196F3;">Diganta Barua</span>, 
-                    <span style="color: #2196F3;">Mahmodul Hasan</span>, 
-                    <span style="color: #2196F3;">Syed Al Mahmud</span>
-                </p>
-                <p><strong style="color: #00ff95;">Topic:</strong> 
-                    <em style="color: #FF6F61;">Nanotechnology: Unlocking the Potential of the Microscopic World</em>
-                </p>
-                <ul>
-                    <li style="color: #2196F3;">Explored nanotech applications in medicine, electronics, energy, and materials.</li>
-                    <li style="color: #2196F3;">Highlighted historical milestones and future implications of nanotech.</li>
-                    <li style="color: #2196F3;">Presented at AIUB with high visual and scientific impact.</li>
-                </ul>
-                <p>
-                    📄 <a href="folder/doc/nanotech.zip"  target="_blank" style="color: #2196F3;">Download Documents (PDF)</a>
-                </p>
-            </section>
-            
+        <ul class="sub">🎓 Beyond the Classroom</ul>
+        <div id="beyond-classroom">
+            <div class="beyond-container" >
+         <div class="class">
+            <div class="class-content">
+                <div class="class-image-section">
+                    <div class="class-image-placeholder" onclick="openImagePopup('nanotech-image')">
+                        <img src="img/nanotech poster final.jpg" alt="Nanotechnology Poster" class="class-image" id="nanotech-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="no-image-found" style="display: none;">
+                            <i>📷</i>
+                            <p>No Photo Found</p>
+                        </div>
+                        <div class="image-hover-text">Click to view</div>
+                    </div>
+                </div>
+                <div class="class-text-section">
+                    <section>
+                        <h2 class="project-title">Nanotechnology Poster Presentation</h2>
+                        <p><strong class="label">Award:</strong> <span class="highlight">Best Poster – Physics Poster Contest</span></p>
+                        <p><strong class="label">Team Members:</strong> 
+                            Nabilah Farha, 
+                            Abdullah Al Mubin, 
+                            Diganta Barua, 
+                            Mahmodul Hasan, 
+                            Syed Al Mahmud
+                        </p>
+                        <p><strong class="label">Topic:</strong> 
+                            <em class="topic">Nanotechnology: Unlocking the Potential of the Microscopic World</em>
+                        </p>
+                        <ul class="achievement-list">
+                            <li>Explored nanotech applications in medicine, electronics, energy, and materials.</li>
+                            <li>Highlighted historical milestones and future implications of nanotech.</li>
+                            <li>Presented at AIUB with high visual and scientific impact.</li>
+                        </ul>
+                        <p>
+                            📄 <a href="folder/doc/nanotech.zip" target="_blank" class="doc-link">Download Documents (PDF)</a>
+                        </p>
+                    </section>
+                </div>
+            </div>
          </div>
-         <div data-aos="zoom-in-up" data-aos-duration="800" class="class">
-            <section>
-                <h2 style="color: #FF6F61;">Research Project</h2>
-                <p><strong style="color: #00ff95;">Title:</strong> From Curiosity to Career: Why Students Choose Computer Science</p>
-                <p><strong style="color: #00ff95;">Duration:</strong> Fall 2024</p>
-                <ul>
-                    <li style="color: #2196F3;">Designed and conducted a survey among CS students at AIUB using Google Forms</li>
-                    <li style="color: #2196F3;">Explored the impact of early interest vs. career prospects in choosing CS</li>
-                    <li style="color: #2196F3;">Segmented data into two groups: with and without initial CS interest</li>
-                    <li style="color: #2196F3;">Analyzed trends affecting subject decisions among Bangladeshi undergrads</li>
-                </ul>
-                <p>
-                    📄 <a href="folder/doc/cs.re.zip"  target="_blank" style="color: #2196F3;">Download Documents (PDF)</a>
-                </p>
-            </section>
+         <div class="class">
+            <div class="class-content">
+                <div class="class-image-section">
+                    <div class="class-image-placeholder" onclick="openImagePopup('research-image')">
+                        <div class="no-image-found">
+                            <i>📷</i>
+                            <p>No Photo Found</p>
+                        </div>
+                        <div class="image-hover-text">Click to view</div>
+                    </div>
+                </div>
+                <div class="class-text-section">
+                    <section>
+                        <h2 class="project-title">Research Project</h2>
+                        <p><strong class="label">Title:</strong> <span class="highlight">From Curiosity to Career: Why Students Choose Computer Science</span></p>
+                        <p><strong class="label">Duration:</strong> Fall 2024</p>
+                        <ul class="achievement-list">
+                            <li>Designed and conducted a survey among CS students at AIUB using Google Forms</li>
+                            <li>Explored the impact of early interest vs. career prospects in choosing CS</li>
+                            <li>Segmented data into two groups: with and without initial CS interest</li>
+                            <li>Analyzed trends affecting subject decisions among Bangladeshi undergrads</li>
+                        </ul>
+                        <p>
+                            📄 <a href="folder/doc/cs.re.zip" target="_blank" class="doc-link">Download Documents (PDF)</a>
+                        </p>
+                    </section>
+                </div>
+            </div>
         </div>
          
        </div>
@@ -229,7 +283,7 @@
                 <a href="#about"><button id="b1">About</button></a>
                 <a href="#skills"><button id="b1">Skills</button></a>
                 <a href="#projects"><button id="b1">Projects</button></a>
-                <a href="#contact"><button id="b1">Contact</button></a>
+                <a href="folder/contact.html"><button id="b1">Contact</button></a>
             </nav>
         </div>
     </header>
@@ -239,8 +293,8 @@
         <div class="footer"> 
         <a href="folder/contact.html" id="contact-me">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-            <div data-aos="fade-right" data-aos-anchor-placement="100" class="btn-contact-me">
-             <div id="contact"><i class="fa fa-arrow-right animate__slideInLeft" aria-hidden="true" herf="#"></i> Contact me
+            <div class="btn-contact-me">
+             <div id="contact"><i class="fa fa-arrow-right" aria-hidden="true" href="#"></i> Contact me
              </div>
             </div>
             <script src="https://use.fontawesome.com/35be55a773.js"></script>
@@ -251,7 +305,137 @@
         <a href="https://www.facebook.com/abdullahalmubin69">Facebook</a> | <a href="https://github.com/mubin25-dodu">GitHub</a> | <a href="https://www.instagram.com/abdullahalmubin69/">Instagram</a>
 
     </footer > 
+    
+    <!-- Image Popup Modal -->
+    <div id="imageModal" class="modal" onclick="closeImagePopup()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <div class="zoom-controls">
+                    <button class="zoom-btn" onclick="zoomIn()" title="Zoom In">+</button>
+                    <span class="zoom-level">100%</span>
+                    <button class="zoom-btn" onclick="zoomOut()" title="Zoom Out">-</button>
+                    <button class="zoom-btn" onclick="resetZoom()" title="Reset">⌂</button>
+                </div>
+                <span class="close" onclick="closeImagePopup()" title="Close">&times;</span>
+            </div>
+            <div class="image-container">
+                <img id="modalImage" src="" alt="Project Image">
+            </div>
+        </div>
+    </div>
+    
     <script>
+        // Image popup functionality with zoom
+        let currentZoom = 1;
+        let isDragging = false;
+        let startX, startY, translateX = 0, translateY = 0;
+        
+        function openImagePopup(imageId) {
+            const image = document.getElementById(imageId);
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            
+            if (image && image.src && image.style.display !== 'none') {
+                modal.style.display = 'block';
+                modalImg.src = image.src;
+                modalImg.alt = image.alt;
+                document.body.style.overflow = 'hidden';
+                
+                // Reset zoom and position
+                currentZoom = 1;
+                translateX = 0;
+                translateY = 0;
+                updateImageTransform();
+                updateZoomLevel();
+            }
+        }
+        
+        function closeImagePopup() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            
+            // Reset zoom and position
+            currentZoom = 1;
+            translateX = 0;
+            translateY = 0;
+        }
+        
+        function zoomIn() {
+            currentZoom = Math.min(currentZoom * 1.2, 5); // Max 5x zoom
+            updateImageTransform();
+            updateZoomLevel();
+        }
+        
+        function zoomOut() {
+            currentZoom = Math.max(currentZoom / 1.2, 0.5); // Min 0.5x zoom
+            updateImageTransform();
+            updateZoomLevel();
+        }
+        
+        function resetZoom() {
+            currentZoom = 1;
+            translateX = 0;
+            translateY = 0;
+            updateImageTransform();
+            updateZoomLevel();
+        }
+        
+        function updateImageTransform() {
+            const modalImg = document.getElementById('modalImage');
+            modalImg.style.transform = `scale(${currentZoom}) translate(${translateX}px, ${translateY}px)`;
+        }
+        
+        function updateZoomLevel() {
+            const zoomLevel = document.querySelector('.zoom-level');
+            zoomLevel.textContent = `${Math.round(currentZoom * 100)}%`;
+        }
+        
+        // Mouse wheel zoom
+        document.getElementById('imageModal').addEventListener('wheel', function(e) {
+            if (e.target.id === 'modalImage') {
+                e.preventDefault();
+                if (e.deltaY < 0) {
+                    zoomIn();
+                } else {
+                    zoomOut();
+                }
+            }
+        });
+        
+        // Drag functionality for zoomed images
+        document.getElementById('modalImage').addEventListener('mousedown', function(e) {
+            if (currentZoom > 1) {
+                isDragging = true;
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                this.style.cursor = 'grabbing';
+            }
+        });
+        
+        document.addEventListener('mousemove', function(e) {
+            if (isDragging) {
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+                updateImageTransform();
+            }
+        });
+        
+        document.addEventListener('mouseup', function() {
+            isDragging = false;
+            const modalImg = document.getElementById('modalImage');
+            if (modalImg) {
+                modalImg.style.cursor = currentZoom > 1 ? 'grab' : 'default';
+            }
+        });
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeImagePopup();
+            }
+        });
+        
         // Calculate age in years, months, and days
         function calculateAge(birthdate) {
             const birthDate = new Date(birthdate);
@@ -280,9 +464,5 @@
         });
         
     </script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
 </body>
 </html>

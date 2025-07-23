@@ -79,21 +79,11 @@
 
 .sub {
   font-size: 40px;
-  background: linear-gradient(to right,#f3928a, #f09e9d);
-  background-size: 200%;
+  color: #28b6ee;
   font-weight: bolder;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientAnimation 5s linear infinite;
-}
-
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 200%;
-  }
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
 }
 
 body {
