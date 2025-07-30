@@ -38,6 +38,54 @@ document.addEventListener('DOMContentLoaded', function () {
     ageElement.textContent = calculateAge('2001-06-30');
   }
 
+  async function fetchGitHubProjects() {
+    const username = 'mubin25-dodu';
+    try {
+      const response = await fetch(`https://api.github.com/users/${username}/repos`);
+      if (!response.ok) throw new Error('Network response was not ok');
+      const repos = await response.json();
+      const projectsList = document.getElementById('projects-list');
+      const cardTemplate = document.getElementById('card-template').content;
+
+      for (const repo of repos) {
+        const card = cardTemplate.cloneNode(true);
+
+        const link = card.querySelector('.repo-link');
+        link.href = repo.html_url;
+        link.textContent = repo.name;
+
+        const description = card.querySelector('.repo-description');
+        description.textContent = repo.description || 'No description available';
+
+        const stars = card.querySelector('.repo-stars');
+        stars.textContent = `⭐ ${repo.stargazers_count}`;
+
+        const forks = card.querySelector('.repo-forks');
+        forks.textContent = `🍴 ${repo.forks_count}`;
+
+        const languageContainer = card.querySelector('.repo-languages');
+        const languagesResponse = await fetch(repo.languages_url);
+        if (!languagesResponse.ok) throw new Error('Network response was not ok');
+        const languages = await languagesResponse.json();
+        const totalBytes = Object.values(languages).reduce((a, b) => a + b, 0);
+
+        for (const [language, bytes] of Object.entries(languages)) {
+          const percentage = ((bytes / totalBytes) * 100).toFixed(2);
+          const languageElement = document.createElement('span');
+          languageElement.classList.add('repo-language');
+          languageElement.textContent = `${language} (${percentage}%)`;
+          languageContainer.appendChild(languageElement);
+        }
+
+        projectsList.appendChild(card);
+      }
+    } catch (error) {
+      console.error('Error fetching GitHub projects:', error);
+    }
+  }
+
+  fetchGitHubProjects();
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Person",
