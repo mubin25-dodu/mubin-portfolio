@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="contact.css">
+<script src="contact.js" defer></script>
+<header> 
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "LhdG6Wko_lHnMBJ6n",
+      });
+   })();
+</script>
+<div class="gap">.-- .-. .. - . / - --- / -- .</div>
+    <div id="nav">
+        <h2>contact me</h2>
+    </div> 
+   
+<small>Enter message (optional) and click button "Send"</small>
+<div class="wrapper centered">
+  <article class="letter">
+    <div class="side">
+      
+      <p>
+        <textarea id="message" placeholder="Your message"></textarea>
+      </p>
+    </div>
+    <div class="side">
+      <p>
+        <input type="text" id="name" placeholder="Your name" >
+      </p>
+      <p>
+        <input type="email" id="Email" placeholder="Your email" required>
+      </p>
+      <p><a href="../index.html"><button id="goBack" >Go Back</button></a>
+        <button id="sendLetter" onclick="sendmail()">Send</button>
+      </p>
+    </div>
+  </article>
+  <div class="envelope front"></div>
+  <div class="envelope back"></div>
+</div>
+<pre class="result-message centered">Thank you for your message
+   
+  <a href="../index.html" style="color: aliceblue;" style="font-size: 30px;">Go Back!!</a></pre>
